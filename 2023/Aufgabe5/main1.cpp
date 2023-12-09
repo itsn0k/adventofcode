@@ -56,7 +56,8 @@ void GetNumbers(std::string line, unsigned int nummbers[]) {
     }
 }
 
-void PrintSeeds(unsigned int a[], int length) {
+
+void PrintSeeds(long long int a[], int length) {
     std::cout << "----------------" << std::endl;
     for(int i = 0; i < length; i++) {
         std::cout << a[i] << std::endl; 
@@ -64,10 +65,12 @@ void PrintSeeds(unsigned int a[], int length) {
     std::cout << "----------------" << std::endl;
 }
 
-void UpdateSeedMaps(bool a[], int length) {
+void PrintSeeds(unsigned int a[], int length) {
+    std::cout << "----------------" << std::endl;
     for(int i = 0; i < length; i++) {
-        a[i] = false; 
+        std::cout << a[i] << std::endl; 
     }
+    std::cout << "----------------" << std::endl;
 }
 
 unsigned int GetLowesNummber(unsigned int a[], int length) {
