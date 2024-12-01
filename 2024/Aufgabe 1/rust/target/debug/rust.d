@@ -1,0 +1,1 @@
+C:\Users\Konstantin\Documents\Projekte\git\adventofcode\adventofcode\2024\Aufgabe\ 1\rust\target\debug\rust.exe: C:\Users\Konstantin\Documents\Projekte\git\adventofcode\adventofcode\2024\Aufgabe\ 1\rust\src\main.rs

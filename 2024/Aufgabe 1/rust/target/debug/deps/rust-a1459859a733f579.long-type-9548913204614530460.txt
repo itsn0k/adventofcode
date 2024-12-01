@@ -1,0 +1,1 @@
+FilterMap<FlatMap<std::str::Lines<'_>, SplitWhitespace<'_>, {closure@src/main.rs:7:19: 7:22}>, fn(&str) -> String {<String as From<&str>>::from}>
