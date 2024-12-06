@@ -27,6 +27,7 @@ if (file.is_open()) {
 
     std::istringstream iss(line);
     std::string token;
+    
     int counter = 0; 
     while (std::getline(iss, token, ' ')) {  // but we can specify a different one
       if (token != "" && counter % 2 == 0 ) {

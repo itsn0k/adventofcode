@@ -200,7 +200,7 @@ int main() {
 
   std::vector<std::vector<char>> input = Read_Input("input.txt");
 
-  task1(input);
+  //task1(input);
   task2(input);
 
 return 0;
