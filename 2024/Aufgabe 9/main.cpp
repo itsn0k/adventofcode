@@ -77,6 +77,7 @@ long long Check_Sum2(std::vector<std::string>& input) {
     if (input_value != ".") {
       int value = std::stoi(input_value);
       sum += i * value;
+      //std::cout << i << " | "<< sum << std::endl; 
     } 
   }
   return sum; 
@@ -101,7 +102,7 @@ int task1(std::vector<std::string>& input) {
     }    
   }
 
-  long long sum = Check_Sum(input);
+  long long sum = Check_Sum2(input);
 
   return sum; 
 }
@@ -135,7 +136,7 @@ int task2(std::vector<std::string>& input) {
                     counter_space++; 
 
                     if (counter_space == temp_counter) {
-                      for (int p =temp_counter; p > 0; p--) {
+                      for (long long p =temp_counter; p > 0; p--) {
                         input[h+1-p] = temp; 
                         input[i-1+p] = secound_value2; 
                       }
@@ -148,7 +149,7 @@ int task2(std::vector<std::string>& input) {
                   }
             }
         }
-        temp = secund_value; 
+        temp = ""; 
         temp_counter =0; 
     }
     
@@ -158,6 +159,8 @@ int task2(std::vector<std::string>& input) {
 
   return sum; 
 }
+
+
 
 int main() {
   
