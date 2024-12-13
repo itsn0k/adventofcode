@@ -55,7 +55,6 @@ struct Coordinates {
       return Coordinates { x*value, y*value};
     }
 };
-
 struct View {
   Coordinates coord; 
   char view; 
@@ -68,7 +67,6 @@ struct View {
       return coord != b.coord || view != b.view; 
     }
 };
-
 struct Feld {
   char feldtyp; 
   std::vector<Coordinates> coordinates;
@@ -104,7 +102,6 @@ int Find_Land(std::vector<std::vector<char>>& input, char last_value, int x, int
   }
   return 0; 
 }
-
 std::vector<Feld> Count_Land(std::vector<std::vector<char>> input)  {
 
 std::vector<Feld> Feld_vektor;
@@ -130,8 +127,6 @@ char save_char = ' ';
   return Feld_vektor;
 }
 
-
-
 int Calulate_perimeter(std::vector<Feld>& felds, int y_length, int x_length) {
   int sum =0; 
   for (int i =0; i < felds.size(); i++) {
@@ -156,7 +151,6 @@ int Calulate_perimeter(std::vector<Feld>& felds, int y_length, int x_length) {
   }
   return sum;
 }
-
 int task1(std::vector<std::vector<char>>& input) {
   
 
@@ -166,7 +160,6 @@ int task1(std::vector<std::vector<char>>& input) {
    
   return sum; 
 }
-
 
 int Find_max_x(std::vector<View>& free_seids) {
 
@@ -253,7 +246,6 @@ int Find_min_y(std::vector<std::vector<View>>& free_seids, char view) {
   }
   return min_y; 
 }
-
 
 bool char_in_view(std::vector<char>& temp_char, char value) {
   for (int h =0; h < temp_char.size(); h++) {
