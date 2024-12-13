@@ -144,69 +144,6 @@ Termin_Erweiterter_euklid Erweiterter_euklidischer(std::vector<std::vector<int>>
     }
   return term; 
 }
-  /*
-    if (call == "") {
-      call += "1*" + std::to_string(memo[i][0]) + "-";
-      call += std::to_string(memo[i][1]) + "*";
-      call += std::to_string(memo[i][2]);
-    } else {
-      std::string read_memo =""; 
-      std::string first_counter = "";
-      std::string first = "";
-      std::string secund_counter = "";
-      std::string third = "";
-      bool is_minus = true; 
-      for (int h =0; h < call.length(); h++) {
-        char value = call[h];
-        
-        if (value == '*') {
-          secund_counter = read_memo; 	
-          read_memo ="";
-        } else if (value == '-') {
-          first = read_memo;
-          is_minus = true;  	
-          read_memo ="";
-        } else if (value == '+') {
-          first = read_memo;
-          is_minus = false;  	
-          read_memo ="";
-        } else {
-          read_memo += value;
-        }
-
-
-        if (h == call.length()-1) {
-          if (read_memo == std::to_string(memo[i][3])) {
-            if (search_x_value == memo[i][0] || search_y_value == memo[i][0]) {
-              if (is_minus) {
-                third += "-"+ secund_counter + "*" + std::to_string(memo[i][0]);
-              } else {
-                third += secund_counter + "*" + std::to_string(memo[i][0]);
-              }
-            } else {
-              if (is_minus) {
-                third += "-"+ std::to_string(std::stoi(secund_counter)*memo[i][0]);
-              } else {
-                third += std::to_string(std::stoi(secund_counter)*memo[i][0]);
-              }
-            }
-            if (search_x_value == memo[i][2] || search_y_value == memo[i][2]) {
-             if (!is_minus) {
-                third += "-"+ std::to_string(std::stoi(secund_counter)*memo[i][1]) + "*" + std::to_string(memo[i][2]);
-              } else {
-                third += std::to_string(std::stoi(secund_counter)*memo[i][1]) + "*" + std::to_string(memo[i][2]);
-              }
-            } else {
-              if (is_minus) {
-                third += "-"+ std::to_string(std::stoi(secund_counter)*memo[i][1]) + "*" + std::to_string(memo[i][2]);
-              } else {
-                third += std::to_string(std::stoi(secund_counter)*memo[i][1]) + "*" + std::to_string(memo[i][2]);
-              }
-            }
-
-          }
-          read_memo ="";
-          */ 
 
 
 
